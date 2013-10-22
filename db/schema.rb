@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131010113556) do
+ActiveRecord::Schema.define(version: 20131022140453) do
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20131010113556) do
     t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "mega_important"
   end
 
 end
