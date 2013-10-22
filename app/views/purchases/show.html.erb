@@ -2,5 +2,10 @@
 
 <p>
   <strong>Item:</strong>
-  <%= @purchase.item_id %>
+  <%= @purchase.item.name %>
+</p>
+
+<p>
+  <strong>You should pay us:</strong>
+  <%= format_as_price @purchase.cost %>
 </p>
