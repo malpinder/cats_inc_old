@@ -4,8 +4,8 @@ class Item < ActiveRecord::Base
 
   has_many :purchases
 
-  def reduce_stock!
-    self.stock -= 1
+  def reduce_stock_by!(amount)
+    self.stock -= amount
     save!
   end
 end
