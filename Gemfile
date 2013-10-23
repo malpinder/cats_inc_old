@@ -21,3 +21,7 @@ gem 'turbolinks'
 
 gem 'rspec-rails'
 gem 'capybara'
+
+group :development do
+  gem 'pry'
+end
