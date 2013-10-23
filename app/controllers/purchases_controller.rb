@@ -1,5 +1,9 @@
 class PurchasesController < ApplicationController
 
+  def new
+    @purchase = Purchase.new(item: Item.find(params[:item_id]))
+  end
+
   def show
     @purchase = Purchase.find(params[:id])
   end

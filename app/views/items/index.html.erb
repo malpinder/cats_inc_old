@@ -20,7 +20,7 @@
         <td><%= item.image %></td>
         <td class="price"><%= format_as_price item.price %></td>
         <td>In stock: <%= item.stock %></td>
-        <td><%= button_to 'Buy', purchases_path(purchase: {item_id: item.id}) %></td>
+        <td><%= link_to 'Buy', new_purchase_path(item_id: item.id) %></td>
       </tr>
     <% end %>
   </tbody>

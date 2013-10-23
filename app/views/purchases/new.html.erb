@@ -1,0 +1,10 @@
+<h1>New purchase</h1>
+<%= form_for @purchase do |f| %>
+  <%= f.hidden_field :item_id %>
+
+  <%= f.label :quantity %>
+  <%= f.select :quantity, 1..@purchase.item.stock %>
+
+  at <%= format_as_price @purchase.item.price %> each
+  <%= f.submit %>
+<% end %>

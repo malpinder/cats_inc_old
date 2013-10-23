@@ -1,6 +1,6 @@
 CatsInc::Application.routes.draw do
 
-  resources :purchases, only: [:create, :show]
+  resources :purchases, only: [:new, :create, :show]
 
   resources :items, only: [:index]
 
